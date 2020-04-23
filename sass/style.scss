@@ -1,0 +1,226 @@
+@import "reset";
+@import "setting";
+@import "common";
+@import "single";
+
+.parallax-window {
+    height: 560px;
+    background: transparent;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        width: 81%;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        font-size: 50px;
+        color: #fff;
+    }
+}
+
+/*typed*/
+
+.ityped-cursor {
+    font-size: 1em;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+/*typed*/
+
+.left-culum {
+
+    .blog-mass {
+
+        .cp_card {
+            position: relative;
+            z-index: 1;
+            display: block;
+            min-width: 270px;
+            margin: 0 auto;
+            margin-top: 40px;
+            transition: all 0.3s linear 0s;
+            border-radius: 3px;
+            background: #ffffff;
+            box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.3);
+            width: 85%;
+        }
+        .cp_card a {
+            text-decoration: none;
+        }
+        .cp_card:hover .photo img {
+            transform: scale(1.1);
+            opacity: 0.6;
+        }
+        .cp_card .photo {
+            overflow: hidden;
+            border-radius: 3px 3px 0 0;
+            background: #000000;
+        }
+        .cp_card .photo .details {
+            font-weight: 700;
+            position: absolute;
+            z-index: 1;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 75px;
+            padding: 14.5px 0;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 100%;
+            background: #e74c3c;
+        }
+        .cp_card .photo .details .day {
+            font-size: 18px;
+        }
+        .cp_card .photo .details .month {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .cp_card .photo img {
+            display: block;
+            width: 100%;
+            transition: all 0.3s linear 0s;
+        }
+        .cp_card .description {
+            position: absolute;
+            bottom: 0;
+            background: #ffffff;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .cp_card .description .category {
+            position: absolute;
+            top: -34px;
+            left: 10px;
+            padding: 5px 15px;
+            height: 34px;
+            text-transform: uppercase;
+            color: #ffffff;
+            border-radius: 3px 3px 0 0;
+            background: #e74c3c;
+        }
+        .cp_card .description h1 {
+            font-size: 1.4em;
+            margin: 0;
+            padding: 0 0 0.1em;
+            color: #333333;
+            padding: 1rem;
+        }
+        .cp_card .description h1 a {
+            text-decoration: none;
+            color: #333333;
+        }
+        .cp_card .description h2 {
+            font-size: 16px;
+            margin: 0;
+            padding: 0 0 5px;
+            color: #e74c3c;
+            padding: .5rem;
+        }
+        .cp_card .description .text {
+            font-size: 14px;
+            line-height: 1.8em;
+            height: 0;
+            opacity: 0;
+            color: #666666;
+            margin: 0;
+            padding: .5rem;
+        }
+        .cp_card .description .meta {
+            margin: 0px 0 0;
+            color: #999999;
+            padding: .5rem;
+        }
+        .cp_card .description .meta .timestamp {
+            margin: 0 16px 0 0;
+        }
+        .cp_card .description .meta a {
+            text-decoration: none;
+            color: #999999;
+        }
+        .cp_card:hover .description .text {
+            height: auto;
+            opacity: 1;
+        }
+    }
+}
+
+.page-btns {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        padding: 30px;
+        background-color: #e74c3c;
+        color: #fff;
+        transition: .5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #ityped {
+        line-height: 1.3;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .cp_card {
+        width: 100%;
+
+        a {
+
+            .photo {
+                height: 310px;
+
+                .details {
+                    right: -10px;
+
+                    img {
+                        width: 100%;
+                        height: 65%;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-btns {
+        width: auto;
+    }
+
+}
+
+@import "404-page";

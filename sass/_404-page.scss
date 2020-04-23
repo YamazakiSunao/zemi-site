@@ -1,0 +1,80 @@
+.single-bg {
+    background-image: url(../images/404-page.jpg);
+    background-size: cover;
+    height: 35vh;
+    background-position: left;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    position: relative;
+
+    &::before{
+        background-color: rgba(0,0,0,0.6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+    }
+}
+
+.left-culum {
+
+    .single-wrap {
+
+        .top-img {
+            margin-top: 40px;
+        }
+
+        .un-text {
+            width: 74.16%;
+            margin: 20px auto;
+
+            &::after {
+                content: '';
+                display: block;
+                border-bottom: 2px solid #999;
+                margin: 50px -4rem;
+            }
+
+            h1 {
+                font-size: 2.3rem;
+                margin: 40px 0 20px;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+
+            .un-en {
+                font-size: 2.3rem;
+            }
+        }
+    }
+    .un-nam {
+        text-align: right;
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .left-culum {
+
+        .single-wrap {
+
+            .top-img {
+                margin-top: 0;
+            }
+
+            .un-text {
+                width: 100%;
+
+                &::after {
+                    margin: 50px 0.6rem;
+                }
+            }
+        }
+    }
+
+}

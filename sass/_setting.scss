@@ -1,0 +1,64 @@
+/*setting*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "M PLUS 1p";
+    width: 100%;
+    height: auto;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,p {
+    margin-top: 0;
+    line-height: 1;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.ds-pc {
+    display: block;
+}
+
+.ds-sm {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrap {
+        padding: 0 5%;
+    }
+
+    .ds-sm {
+        display: block;
+    }
+
+    .ds-pc {
+        display: none;
+    }
+}
+
+/*setting*/
